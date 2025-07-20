@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pooja Kalukhe | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- header section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <div class="logo">P<span>K</span><span class="dot">.</span></div>
+        <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+        <ul id="nav-links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#techstack">Skills</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-text">
+        <div class="profile">
+          <img src="./images/Pooja_2.jpeg" alt="Pooja's pic" />
+        </div>
+        <p>Frontend Developer | React Enthusiast</p>
+        <h1 class="typing-line"></h1>
+        <!-- <h1 class="typing-text">Hi, I'm <span >Pooja</span> <br />- a passionate web developer</h1> -->
+      </div>
+      <div class="resume">
+        <a href="./assest/Pooja_Anand_Kalukhe.pdf" download class="resume-btn">Download Resume</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- about section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="./images/pooja_about.jpg" alt="" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            I'm Pooja Kalukhe, a Frontend Developer based in Pune with a solid foundation in HTML, CSS, JavaScript, and
+            React. I build responsive, user-friendly web applications with clean design and strong functionality. With a
+            background in AI & Data Science, I bring strong problem-solving skills and am currently expanding into
+            fullstack development with Node.js, Express, and MongoDB.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+            <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Frontend Development</span><br />
+                Designed responsive, user-friendly web interfaces with modern layouts.
+              </li>
+              <li>
+                <span>Interactive UI Logic</span><br />
+                Created dynamic components with smooth state and event handling.
+              </li>
+              <li>
+                <span>Backend Integration</span><br />
+                Integrated APIs and handled database connections for full functionality.
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Sept 2024 - Feb 2025</span><br />Ajspire Pvt Ltd – Full Stack Intern</li>
+              <li><span>Aug 2024 - Sept 2024</span><br />Unified Mentor – Web Dev Intern</li>
+              <li><span>Apr 2024 - May 2024</span><br />Internship Studio – Web Dev Intern</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>B.E. (2020–2024)</span><br />
+                D. Y. Patil College of Engineering, Pune — CGPA: 8.73
+              </li>
+              <li>
+                <span>HSC (2018–2020)</span><br />
+                Abhinav International College, Baramati — 67.23%
+              </li>
+              <li>
+                <span>SSC (2016–2018)</span><br />
+                Mudhoji High School, Phaltan — 68.40%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------skilss section -------------------- -->
+
+  <section id="techstack" class="tech-section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="skills-intro">These are the technologies I'm familiar with and have hands-on experience in:</p>
+
+      <!-- Frontend -->
+      <h3 class="skill-subtitle">Frontend</h3>
+      <div class="tech-grid">
+        <div class="tech-item" style="--i:1" onclick="toggleSkill(this)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+          <p>HTML</p>
+          <div class="tech-info">
+            <p>Standard markup language used to structure web content.</p>
+          </div>
+        </div>
+        <div class="tech-item" style="--i:2" onclick="toggleSkill(this)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+          <p>CSS</p>
+          <div class="tech-info">
+            <p>Used for styling and designing the layout of web pages.</p>
+          </div>
+        </div>
+        <div class="tech-item" style="--i:3" onclick="toggleSkill(this)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            alt="JavaScript">
+          <p>JavaScript</p>
+          <div class="tech-info">
+            <p>Adds interactivity and logic to websites and web apps.</p>
+          </div>
+        </div>
+        <div class="tech-item" style="--i:4" onclick="toggleSkill(this)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+          <p>React</p>
+          <div class="tech-info">
+            <p>JS library used for building fast, component-based UIs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <h3 class="skill-subtitle">Backend/Database</h3>
+      <div class="tech-grid">
+        <div class="tech-item" style="--i:5" onclick="toggleSkill(this)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+          <p>Java</p>
+          <div class="tech-info">
+            <p>General-purpose backend language known for reliability.</p>
+          </div>
+        </div>
+        <div class="tech-item" style="--i:6" onclick="toggleSkill(this)">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+          <p>SQL</p>
+          <div class="tech-info">
+            <p>Structured query language for interacting with databases.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- -----------------------project Section--------------------- -->
+
+  <div id="projects">
+    <div class="container">
+      <h1 class="section-title">My Projects</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="./images/E_commerce_web.png " alt="E_commerce_web" srcset="">
+          <div class="layer">
+            <h3> E-Commerce Shopping Website</h3>
+            <p>Designed a responsive shopping site with user login, product display, reviews, and blog section.</p>
+            <a href="https://pooja819.github.io/E-commerce-Website/" target="_blank" rel="noopener noreferrer">
+  <i class="fa-solid fa-up-right-from-square"></i>
+</a>
+
+            <!-- <a href="https://pooja819.github.io/E-commerce-Website/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+          </div>
+        </div>
+        <div class="work">
+          <img src="./images/Hosing_society.png" alt="Hosing_society" srcset="">
+          <div class="layer">
+            <h3>Housing Society Management System</h3>
+            <p>Developed a web platform to manage society tasks like member records and maintenance tracking.</p>
+            <!-- <a href="https://github.com/pooja819/Housing-Society-Management-System"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+          </div>
+
+        </div>
+        <div class="work">
+          <img src="./images/tic_tac_toe.png" alt="tic_tac_toe" srcset="">
+          <div class="layer">
+            <h3>Tic Tac Toe Game</h3>
+            <p>Created a 2-player game with dark mode, clean design, and interactive gameplay.</p>
+            <a href="https://pooja819.github.io/tic-tac-toe/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="#" class="btn">See More</a> -->
+    </div>
+  </div>
+  <!-- ---------------contact------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="section-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>kalukhepooja85@gmail.com</p>
+          <p><i class="fa-solid fa-phone-volume"></i>+91 7887500404</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/poojakalukhe--08m19ba/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/pooja819"><i class="fa-brands fa-github"></i></a>
+            <!-- <a href=""><i class="fa-brands fa-instagram"></i></a> -->
+          </div>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn submit-bg-color">Submit</button>
+          </form>
+          <p id="form-success-msg" style="display: none; color: #00ff7f; font-weight: 600; margin-top: 10px;"> ✅ Your message was sent successfully!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="copyright">
+    <p>Copyright © Pooja. Made with <i class="fa-solid fa-heart"></i> by Me:)</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
