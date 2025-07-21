@@ -66,7 +66,7 @@ document.querySelectorAll('#nav-links a').forEach(link => {
 
 
 // Form submission
-const scriptURL = 'https://script.google.com/macros/s/AKfycbzifySOGQ883oYJp13eOpqXJVRoThcWFHi_N8L5DB8bjkRNdJGZc3C8MU_SD5xDu17xXw/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxYOeTBMUTIhRCyZ6acR0w6mSkU4fB3wvUvjoYPGorU5SQGvkxFI2sF55p7syYYwcSJ4w/exec';
 const form = document.forms['submit-to-google-sheet'];
 const successMsg = document.getElementById("form-success-msg");
 const submitBtn = form.querySelector("button[type='submit']");
