@@ -1,32 +1,28 @@
-//for typing effect
+// Typing effect
+document.addEventListener("DOMContentLoaded", () => {
+  const typingLine = document.querySelector(".typing-line");
+  const textBefore = "Hi I'm ";
+  const highlighted = "<span>Pooja</span><br>";
+  const textAfter = "- a passionate web developer";
+  const fullText = textBefore + highlighted + textAfter;
+  let index = 0;
 
-const typingLine = document.querySelector(".typing-line");
-const lines = [
-  "Hi, I'm ",
-  "<span>Pooja</span><br>",
-  "- a passionate web developer"
-];
-let index = 0;
-let text = '';
-let line = 0;
-function typeLine() {
-  if (line < lines.length) {
-    if (index < lines[line].length) {
-      text += lines[line][index++];
-      typingLine.innerHTML = text;
-      setTimeout(typeLine, 60);
+  function typeHTML() {
+    if (index <= fullText.length) {
+      typingLine.innerHTML = fullText.slice(0, index);
+      index++;
+      setTimeout(typeHTML, 60);
     } else {
-      line++;
-      index = 0;
-      setTimeout(typeLine, 300); // delay before next line
+      typingLine.innerHTML = fullText;
+      typingLine.classList.remove("typing-line"); // remove class to stop blinking
     }
-  } else {
-    typingLine.classList.add('no-cursor'); // Remove blinking cursor
   }
-}
-window.onload = typeLine;
+
+  typeHTML();
+});
 
 
+// Tab switching (About/Skills/etc.)
 function opentab(evt, tabname) {
   const tablinks = document.getElementsByClassName("tab-links");
   const tabcontents = document.getElementsByClassName("tab-contents");
@@ -39,49 +35,67 @@ function opentab(evt, tabname) {
   evt.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
-function toggleSkill(el) {
-    el.classList.toggle('active');
+
+function toggleMenu() {
+  const navLinks = document.getElementById('nav-links');
+  const menuIcon = document.getElementById('menu-icon').querySelector('i');
+
+  navLinks.classList.toggle('show');
+
+  // Change icon between bars and close
+  if (navLinks.classList.contains('show')) {
+    menuIcon.classList.remove('fa-bars');
+    menuIcon.classList.add('fa-xmark');
+  } else {
+    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.add('fa-bars');
   }
-//for contact section
-  const elements = document.querySelectorAll('#contact .contact-left, #contact .contact-right');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.3 });
+}
 
-  elements.forEach(el => observer.observe(el));
+// Auto-close nav when a link is clicked
+document.querySelectorAll('#nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('nav-links').classList.remove('show');
 
-  //for responsiveness
-  function toggleMenu() {
-        const navLinks = document.getElementById('nav-links');
-        navLinks.classList.toggle('show');
-      }
-// // form connect 
-
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbzifySOGQ883oYJp13eOpqXJVRoThcWFHi_N8L5DB8bjkRNdJGZc3C8MU_SD5xDu17xXw/exec';
-  const form = document.forms['submit-to-google-sheet'];
-  const successMsg = document.getElementById("form-success-msg");
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        successMsg.style.display = "block";
-        successMsg.innerText = "✅ Your message was sent successfully!";
-        successMsg.style.color = "#00ff7f";
-        form.reset();
-        setTimeout(() => {
-          successMsg.style.display = "none";
-        }, 5000);
-      })
-      .catch(error => {
-        console.error('Error!', error.message);
-        successMsg.style.display = "block";
-        successMsg.innerText = "❌ Message failed to send. Try again.";
-        successMsg.style.color = "#ff004f";
-      });
+    // Reset icon to hamburger
+    const menuIcon = document.getElementById('menu-icon').querySelector('i');
+    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.add('fa-bars');
   });
+});
+
+
+// Form submission
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzifySOGQ883oYJp13eOpqXJVRoThcWFHi_N8L5DB8bjkRNdJGZc3C8MU_SD5xDu17xXw/exec';
+const form = document.forms['submit-to-google-sheet'];
+const successMsg = document.getElementById("form-success-msg");
+const submitBtn = form.querySelector("button[type='submit']");
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+
+  submitBtn.disabled = true;
+  submitBtn.innerText = "Sending...";
+
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      successMsg.style.display = "block";
+      successMsg.innerText = "✅ Your message was sent successfully!";
+      successMsg.style.color = "#00ff7f";
+      form.reset();
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Send";
+
+      setTimeout(() => {
+        successMsg.style.display = "none";
+      }, 1000);
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      successMsg.style.display = "block";
+      successMsg.innerText = "❌ Message failed to send. Try again.";
+      successMsg.style.color = "#ff004f";
+      submitBtn.disabled = false;
+      submitBtn.innerText = "Send";
+    });
+});
